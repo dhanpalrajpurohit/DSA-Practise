@@ -54,8 +54,11 @@ class LinkedList:
 	def delete():
 		pass
 
-	def delete_at_first():
-		pass
+	def delete_at_first(self):
+		tempNode = Node()
+		tempNode = self.head
+		self.head = self.head.next
+		del tempNode
 
 	def delete_at_middle():
 		pass
@@ -83,7 +86,7 @@ l1.insert(10)
 l1.insert(20)
 l1.insert(30)
 l1.insert_first(40)
-
+l1.delete_at_first()
 l1.display()
 l1.getLength()
 
